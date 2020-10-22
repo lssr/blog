@@ -2,7 +2,7 @@
 keywords: fastai
 description: "Use FEniCS to solve linear elasticity equations for a 2D beam."
 title: "2D Linear Elasticity"
-image: images/2D_linear_elasticity/thumbnail.png
+image: images/2D_linear_elasticity/thumbnail.png- comments: true
 nb_path: _notebooks/2020-10-20-2D-linear-elasticity.ipynb
 layout: notebook
 ---
