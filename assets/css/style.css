@@ -425,13 +425,13 @@ pre code { font-size: 15px !important; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
-[class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
+[class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #f5f5f5 !important; color: #373b41; }
 
-.language-python + .language-plaintext code { background-color: white !important; }
+.language-python + .language-plaintext code { background-color: #f5f5f5 !important; }
 
-.language-python + .language-plaintext pre { background-color: white !important; }
+.language-python + .language-plaintext pre { background-color: #f5f5f5 !important; }
 
-.input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
+.input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #f5f5f5 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Consolas, monospace; border-radius: 5px; font-size: 105%; }
 
 .output_area pre, .output_area div { margin-bottom: 1rem !important; margin-top: 0rem !important; padding-bottom: 0 !important; padding-top: 0 !important; }
 
@@ -442,40 +442,154 @@ pre code { font-size: 15px !important; }
 .code_cell table { width: auto; }
 
 /* Dracula Theme v1.2.5 https://github.com/zenorocha/dracula-theme Copyright 2016, All rights reserved Code licensed under the MIT license */
-.highlight { background: #323443 !important; color: #f8f8f2 !important; }
+.highlight { background: #f5f5f5 !important; color: #373b41 !important; }
 
-.highlight pre, .highlight code { background: #323443; color: #f8f8f2; font-size: 110%; }
+.highlight pre, .highlight code { background: #f5f5f5; color: #373b41; font-size: 110%; }
 
-.highlight .hll, .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #e7997a; }
+.highlight .p { color: #3971ED; }
 
-.highlight .go { color: #44475a; }
+.highlight .hll { background-color: #c5c8c6; }
 
-.highlight .err, .highlight .g, .highlight .l, .highlight .n, .highlight .x, .highlight .ge, .highlight .gr, .highlight .gh, .highlight .gi, .highlight .gp, .highlight .gs, .highlight .gu, .highlight .gt, .highlight .ld, .highlight .no, .highlight .nd, .highlight .pi, .highlight .ni, .highlight .ne, .highlight .nn, .highlight .nx, .highlight .py, .highlight .w, .highlight .bp { color: #f8f8f2; background-color: #323443 !important; }
+.highlight .c { color: #b4b7b4; font-style: italic; }
 
-.highlight .p { font-weight: bold; color: #66d9ef; }
+.highlight .err { border: 1px solid #3971ED; }
+
+.highlight .k { color: #A36AC7; font-weight: bold; }
+
+.highlight .o { color: #A36AC7; font-weight: bold; }
+
+.highlight .ch { color: #b4b7b4; font-style: italic; }
+
+.highlight .cm { color: #b4b7b4; font-style: italic; }
+
+.highlight .cp { color: #A36AC7; }
+
+.highlight .cpf { color: #b4b7b4; font-style: italic; }
+
+.highlight .c1 { color: #b4b7b4; font-style: italic; }
+
+.highlight .cs { color: #b4b7b4; background-color: #fff0f0; }
+
+.highlight .gd { color: #3971ED; }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .gr { color: #3971ED; }
+
+.highlight .gh { color: #3971ED; font-weight: bold; }
+
+.highlight .gi { color: #3971ED; }
+
+.highlight .go { color: #3971ED; }
+
+.highlight .gp { color: #3971ED; font-weight: bold; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: #3971ED; font-weight: bold; }
+
+.highlight .gt { color: #3971ED; }
+
+.highlight .kc { color: #FBA922; font-weight: bold; }
+
+.highlight .kd { color: #FBA922; font-weight: bold; }
+
+.highlight .kn { color: #FBA922; font-weight: bold; }
+
+.highlight .kp { color: #A36AC7; }
+
+.highlight .kr { color: #A36AC7; font-weight: bold; }
+
+.highlight .kt { color: #A36AC7; }
+
+.highlight .m { color: #F96A38; }
+
+.highlight .s { color: #198844; }
+
+.highlight .n { color: #373b41; }
+
+.highlight .na { color: #198844; }
+
+.highlight .nb { color: #3971ED; }
+
+.highlight .nc { color: #A36AC7; font-weight: bold; }
+
+.highlight .no { color: #FBA922; }
+
+.highlight .nd { color: #3971ED; font-weight: bold; }
+
+.highlight .ni { color: #3971ED; font-weight: bold; }
+
+.highlight .ne { color: #A36AC7; }
+
+.highlight .nf { color: #3971ED; }
+
+.highlight .nl { color: #3971ED; font-weight: bold; }
+
+.highlight .nn { color: #3971ED; font-weight: bold; }
+
+.highlight .nt { color: #3971ED; font-weight: bold; }
+
+.highlight .nv { color: #3971ED; }
+
+.highlight .ow { color: #A36AC7; font-weight: bold; }
+
+.highlight .mb { color: #F96A38; }
+
+.highlight .mf { color: #F96A38; }
+
+.highlight .mh { color: #F96A38; }
+
+.highlight .mi { color: #F96A38; }
+
+.highlight .mo { color: #F96A38; }
+
+.highlight .sa { color: #198844; }
+
+.highlight .sb { color: #198844; }
+
+.highlight .sc { color: #198844; }
+
+.highlight .dl { color: #198844; }
+
+.highlight .sd { color: #198844; font-style: italic; }
+
+.highlight .s2 { color: #198844; }
+
+.highlight .se { color: #198844; font-weight: bold; }
+
+.highlight .sh { color: #198844; }
+
+.highlight .si { color: #3971ED; font-style: italic; }
+
+.highlight .sx { color: #3971ED; }
+
+.highlight .sr { color: #3971ED; }
+
+.highlight .s1 { color: #198844; }
+
+.highlight .ss { color: #198844; }
+
+.highlight .bp { color: #A36AC7; }
+
+.highlight .fm { color: #3971ED; }
+
+.highlight .vc { color: #CC342B; }
+
+.highlight .vg { color: #CC342B; }
+
+.highlight .vi { color: #CC342B; }
+
+.highlight .vm { color: #3971ED; }
+
+.highlight .il { color: #F96A38; }
 
 .highlight .ge { text-decoration: underline; }
 
 .highlight .bp { font-style: italic; }
 
-.highlight .c, .highlight .ch, .highlight .cm, .highlight .cpf, .highlight .cs { color: #6272a4; }
-
-.highlight .c1 { color: gray; }
-
-.highlight .kd, .highlight .kt, .highlight .nb, .highlight .nl, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { color: #8be9fd; }
-
 .highlight .kd, .highlight .nb, .highlight .nl, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm { font-style: italic; }
 
-.highlight .fm, .highlight .na, .highlight .nc, .highlight .nf { color: #ace591; }
-
-.highlight .k, .highlight .o, .highlight .cp, .highlight .kc, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .nt, .highlight .ow { color: #ff79c6; }
-
-.highlight .kc { color: #ace591; }
-
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; }
-
-.highlight .gd { color: #ff5555; }
-
-p code { font-size: 19px; }
+p code { font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */
