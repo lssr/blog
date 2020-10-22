@@ -1,0 +1,360 @@
+// Override Syntax Highlighting In Minima With the Dracula Theme: https://draculatheme.com/
+// If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
+ 
+$dt-gray-dark: #f5f5f5;  // Background
+$dt-code-cell-background: #e0e0e0;
+$dt-gray: #c5c8c6;       // Current Line & Selection
+$dt-blue: #b4b7b4;       // Comment
+$dt-gray-light: #969896; // Foreground
+$dt-cyan: #8be9fd;
+$dt-green: #50fa7b;
+$dt-orange: #ffb86c;
+$dt-pink: #ff79c6;
+$dt-purple: #bd93f9;
+$dt-red: #ff5555;
+$dt-yellow: #f1fa8c;
+$dt-green-light: #198844;
+
+$base00: #f5f5f5;
+$base01: #e0e0e0;
+$base02: #c5c8c6;
+$base03: #b4b7b4;
+$base04: #969896;
+$base05: #373b41;
+$base06: #282a2e;
+$base07: #1d1f21;
+$base08: #CC342B;
+$base09: #F96A38;
+$base0A: #FBA922;
+$base0B: #198844;
+$base0C: #3971ED;
+$base0D: #3971ED;
+$base0E: #A36AC7;
+$base0F: #3971ED;
+
+.language-python + .language-plaintext {
+    border-left: 1px solid grey;
+    margin-left: 1rem !important;
+}
+
+// ensure dark background for code in markdown
+[class^="language-"]:not(.language-plaintext) pre,
+[class^="language-"]:not(.language-plaintext) code {
+    background-color: $base00 !important;
+    color: $base05;
+}
+
+.language-python + .language-plaintext code { background-color: $base00 !important; }
+.language-python + .language-plaintext pre  { background-color: $base00 !important; }
+
+// for Jupyter Notebook HTML Code Cells modified from https://www.fast.ai/public/css/hyde.css
+
+.input_area pre, .input_area div {
+    margin-bottom:1.0rem !important;
+    margin-top:1.5rem !important;
+    padding-bottom:0 !important;
+    padding-top:0 !important;
+    background: $base00 !important;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Menlo, Consolas, monospace;
+    border-radius: 5px;
+    font-size: 105%;
+}
+.output_area pre, .output_area div {
+    margin-bottom:1rem !important;
+    margin-top:0rem !important;
+    padding-bottom:0 !important;
+    padding-top:0 !important;
+}
+.input_area pre {
+    border-left: 1px solid lightcoral;
+}
+.output_area pre {
+    border-left: 1px solid grey;
+    margin-left: 1rem !important;
+    font-size: 16px;
+}
+
+.code_cell table { width: auto; }
+
+/* Dracula Theme v1.2.5
+ *
+ * https://github.com/zenorocha/dracula-theme
+ *
+ * Copyright 2016, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ */
+
+.highlight {
+    background: $base00 !important;
+    color: $base05 !important;
+    pre, code {
+     background: $base00;
+     color: $base05;
+     font-size: 110%;
+    }
+
+  .p {
+    color: $base0D;
+  }
+
+  .hll {
+    background-color: $base02;
+  }
+
+  .c {
+    color: $base03;
+    font-style: italic;
+  } /// Comment
+  .err {
+    border: 1px solid $base0F;
+  } /// Error
+  .k {
+    color: $base0E;
+    font-weight: bold;
+  } /// Keyword
+  .o {
+    color: $base0E;
+    font-weight: bold;
+  } /// Operator
+  .ch {
+    color: $base03;
+    font-style: italic;
+  } /// Comment.Hashbang
+  .cm {
+    color: $base03;
+    font-style: italic;
+  } /// Comment.Multiline
+  .cp {
+    color: $base0E;
+  } /// Comment.Preproc
+  .cpf {
+    color: $base03;
+    font-style: italic;
+  } /// Comment.PreprocFile
+  .c1 {
+    color: $base03;
+    font-style: italic;
+  } /// Comment.Single
+  .cs {
+    color: $base03;
+    background-color: #fff0f0;
+  } /// Comment.Special
+  .gd {
+    color: $base0F;
+  } /// Generic.Deleted
+  .ge {
+    font-style: italic;
+  } /// Generic.Emph
+  .gr {
+    color: $base0F;
+  } /// Generic.Error
+  .gh {
+    color: $base0D;
+    font-weight: bold;
+  } /// Generic.Heading
+  .gi {
+    color: $base0D;
+  } /// Generic.Inserted
+  .go {
+    color: $base0D;
+  } /// Generic.Output
+  .gp {
+    color: $base0C;
+    font-weight: bold;
+  } /// Generic.Prompt
+  .gs {
+    font-weight: bold;
+  } /// Generic.Strong
+  .gu {
+    color: $base0D;
+    font-weight: bold;
+  } /// Generic.Subheading
+  .gt {
+    color: $base0D;
+  } /// Generic.Traceback
+  .kc {
+    color: $base0A;
+    font-weight: bold;
+  } /// Keyword.Constant
+  .kd {
+    color: $base0A;
+    font-weight: bold;
+  } /// Keyword.Declaration
+  .kn {
+    color: $base0A;
+    font-weight: bold;
+  } /// Keyword.Namespace
+  .kp {
+    color: $base0E;
+  } /// Keyword.Pseudo
+  .kr {
+    color: $base0E;
+    font-weight: bold;
+  } /// Keyword.Reserved
+  .kt {
+    color: $base0E;
+  } /// Keyword.Type
+  .m {
+    color: $base09;
+  } /// Literal.Number
+  .s {
+    color: $base0B;
+  } /// Literal.String
+  .n {
+    color: $base05;
+  } /// Name
+  .na {
+    color: $base0B;
+  } /// Name.Attribute
+  .nb {
+    color: $base0D;
+  } /// Name.Builtin
+  .nc {
+    color: $base0E;
+    font-weight: bold;
+  } /// Name.Class
+  .no {
+    color: $base0A;
+  } /// Name.Constant
+  .nd {
+    color: $base0D;
+    font-weight: bold;
+  } /// Name.Decorator
+  .ni {
+    color: $base0D;
+    font-weight: bold;
+  } /// Name.Entity
+  .ne {
+    color: $base0E;
+  } /// Name.Exception
+  .nf {
+    color: $base0D;
+  } /// Name.Function
+  .nl {
+    color: $base0D;
+    font-weight: bold;
+  } /// Name.Label
+  .nn {
+    color: $base0D;
+    font-weight: bold;
+  } /// Name.Namespace
+  .nt {
+    color: $base0D;
+    font-weight: bold;
+  } /// Name.Tag
+  .nv {
+    color: $base0D;
+  } /// Name.Variable
+  .ow {
+    color: $base0E;
+    font-weight: bold;
+  } /// Operator.Word
+  .w {
+  } /// Text.Whitespace
+  .mb {
+    color: $base09;
+  } /// Literal.Number.Bin
+  .mf {
+    color: $base09;
+  } /// Literal.Number.Float
+  .mh {
+    color: $base09;
+  } /// Literal.Number.Hex
+  .mi {
+    color: $base09;
+  } /// Literal.Number.Integer
+  .mo {
+    color: $base09;
+  } /// Literal.Number.Oct
+  .sa {
+    color: $base0B;
+  } /// Literal.String.Affix
+  .sb {
+    color: $base0B;
+  } /// Literal.String.Backtick
+  .sc {
+    color: $base0B;
+  } /// Literal.String.Char
+  .dl {
+    color: $base0B;
+  } /// Literal.String.Delimiter
+  .sd {
+    color: $base0B;
+    font-style: italic;
+  } /// Literal.String.Doc
+  .s2 {
+    color: $base0B;
+  } /// Literal.String.Double
+  .se {
+    color: $base0B;
+    font-weight: bold;
+  } /// Literal.String.Escape
+  .sh {
+    color: $base0B;
+  } /// Literal.String.Heredoc
+  .si {
+    color: $base0C;
+    font-style: italic;
+  } /// Literal.String.Interpol
+  .sx {
+    color: $base0C;
+  } /// Literal.String.Other
+  .sr {
+    color: $base0C;
+  } /// Literal.String.Regex
+  .s1 {
+    color: $base0B;
+  } /// Literal.String.Single
+  .ss {
+    color: $base0B;
+  } /// Literal.String.Symbol
+  .bp {
+    color: $base0E;
+  } /// Name.Builtin.Pseudo
+  .fm {
+    color: $base0C;
+  } /// Name.Function.Magic
+  .vc {
+    color: $base08;
+  } /// Name.Variable.Class
+  .vg {
+    color: $base08;
+  } /// Name.Variable.Global
+  .vi {
+    color: $base08;
+  } /// Name.Variable.Instance
+  .vm {
+    color: $base0D;
+  } /// Name.Variable.Magic
+  .il {
+    color: $base09;
+  } /// Literal.Number.Integer.Long   
+
+    .ge {
+      text-decoration: underline;
+    }
+  
+    .bp {
+      font-style: italic;
+    }
+ 
+    .kd,
+    .nb,
+    .nl,
+    .nv,
+    .vc,
+    .vg,
+    .vi,
+    .vm {
+      font-style: italic;
+    }
+  
+}
+
+p code{
+  font-size: 16px;
+}
