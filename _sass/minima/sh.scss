@@ -1,36 +1,23 @@
 // Override Syntax Highlighting In Minima With the Dracula Theme: https://draculatheme.com/
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
  
-$dt-gray-dark: #f5f5f5;  // Background
-$dt-code-cell-background: #e0e0e0;
-$dt-gray: #c5c8c6;       // Current Line & Selection
-$dt-blue: #b4b7b4;       // Comment
-$dt-gray-light: #969896; // Foreground
-$dt-cyan: #8be9fd;
-$dt-green: #50fa7b;
-$dt-orange: #ffb86c;
-$dt-pink: #ff79c6;
-$dt-purple: #bd93f9;
-$dt-red: #ff5555;
-$dt-yellow: #f1fa8c;
-$dt-green-light: #198844;
-
-$base00: #f5f5f5;
-$base01: #e0e0e0;
-$base02: #c5c8c6;
-$base03: #b4b7b4;
-$base04: #969896;
-$base05: #373b41;
-$base06: #282a2e;
-$base07: #1d1f21;
-$base08: #CC342B;
-$base09: #F96A38;
-$base0A: #FBA922;
-$base0B: #198844;
-$base0C: #3971ED;
-$base0D: #3971ED;
-$base0E: #A36AC7;
-$base0F: #3971ED;
+$base00: #f0f0f0; //#f9f5d7;
+$base01: #ebdbb2;
+$base02: #d5c4a1;
+$base03: #bdae93;
+$base04: #665c54;
+$base05: #504945;
+$base06: #3c3836;
+$base07: #282828;
+$base08: #9d0006;
+$base09: #af3a03;
+$base0A: #b57614;
+$base0B: #79740e;
+$base0C: #427b58;
+$base0D: #076678;
+$base0E: #8f3f71;
+$base0E2: #A1524D;
+$base0F: #d65d0e;
 
 .language-python + .language-plaintext {
     border-left: 1px solid grey;
@@ -113,7 +100,7 @@ $base0F: #3971ED;
     border: 1px solid $base0F;
   } /// Error
   .k {
-    color: $base0E;
+    color: $base0E2;
     font-weight: bold;
   } /// Keyword
   .o {

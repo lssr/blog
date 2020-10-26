@@ -1,12 +1,87 @@
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
 @import "minima/fastpages-styles";   
-
-
-
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
-@import "minima/sh"; 
-// @import "minima/fastpages-dracula-highlight"; 
+@import "minima/sh";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+.page-content, body {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.post-title {
+  font-weight: 700 !important;
+}
+
+.post-list > li {
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Box {
+  border: none !important;
+}
+
+.post-link {
+  font-size: 2rem !important; 
+  color: #404040;
+  font-weight: 500;
+}
+
+.post-link:visited {
+  color: #303030;
+}
+
+.title-home {
+  color: #585858;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+#recent-posts {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feed-subscribe {
+  color: #ffffff !important;
+}
+
+.site-title {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.site-nav .page-link {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.site-header {
+  border-bottom: none;
+  border-top: none;
+
+}
+
+.wrapper {
+  padding-top: 15px; 
+}
+
+.footer-text {
+  width: 100%;
+  text-align: center;
+}
+
+.site-footer {
+  border-top: none;
+}
+
